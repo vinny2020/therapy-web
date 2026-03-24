@@ -1,0 +1,78 @@
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 1.4rem 0;
+  transition: background 0.4s, padding 0.4s, box-shadow 0.4s;
+}
+.nav--scrolled {
+  background: var(--cream);
+  padding: 0.9rem 0;
+  box-shadow: 0 2px 24px rgba(46,36,22,0.08);
+}
+.nav__inner {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav__logo { display: flex; flex-direction: column; gap: 0; }
+.nav__logo-name {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+  color: var(--bark);
+}
+.nav__logo-cred {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--fern);
+  text-transform: uppercase;
+}
+.nav__links {
+  display: flex; align-items: center; gap: 2.2rem;
+}
+.nav__link {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bark);
+  position: relative;
+  transition: color 0.2s;
+}
+.nav__link::after {
+  content: ''; position: absolute; bottom: -3px; left: 0; right: 0;
+  height: 1px; background: var(--fern);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.3s var(--ease-out);
+}
+.nav__link:hover { color: var(--fern); }
+.nav__link:hover::after { transform: scaleX(1); }
+.nav__cta {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--fern);
+  color: var(--cream) !important;
+  padding: 0.55rem 1.4rem;
+  border-radius: 2px;
+  transition: background 0.25s;
+}
+.nav__cta:hover { background: var(--fern-dark); }
+.nav__burger {
+  display: none;
+  flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.nav__burger span {
+  display: block; width: 24px; height: 1.5px; background: var(--bark);
+  transition: transform 0.3s, opacity 0.3s;
+}
+@media (max-width: 720px) {
+  .nav__burger { display: flex; }
+  .nav__links {
+    display: none; position: fixed; inset: 0; background: var(--cream);
+    flex-direction: column; justify-content: center; align-items: center;
+    gap: 2.5rem; font-size: 1.1rem;
+  }
+  .nav__links--open { display: flex; }
+}
