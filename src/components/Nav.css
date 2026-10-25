@@ -11,12 +11,20 @@
 .nav__inner {
   display: flex; align-items: center; justify-content: space-between;
 }
-.nav__logo { display: flex; flex-direction: column; gap: 0; }
+.nav__logo { display: flex; flex-direction: column; gap: 0; min-width: 0; }
 .nav__logo-name {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
-  letter-spacing: 0.02em;
+  font-size: 1.2rem;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
   color: var(--bark);
+}
+@media (max-width: 1000px) {
+  .nav__logo-name { font-size: 1.02rem; }
+}
+@media (max-width: 480px) {
+  .nav__logo { max-width: 240px; }
+  .nav__logo-name { font-size: 0.98rem; }
 }
 .nav__logo-cred {
   font-family: var(--font-sans);
@@ -80,3 +88,12 @@
 /* ── Active tab ── */
 .nav__link--active { color: var(--blue); }
 .nav__link--active::after { transform: scaleX(1); }
+
+/* ── Tablet: keep the longer practice name + links from crowding ── */
+.nav__cta { white-space: nowrap; }
+@media (min-width: 721px) and (max-width: 1000px) {
+  .nav__logo { max-width: 210px; }
+  .nav__links { gap: 1.2rem; }
+  .nav__link { font-size: 0.72rem; letter-spacing: 0.08em; }
+  .nav__cta { font-size: 0.7rem; letter-spacing: 0.08em; padding: 0.5rem 0.9rem; }
+}
