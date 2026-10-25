@@ -1,15 +1,13 @@
-/* ── Botanical Garden Theme ── */
+/* ── Coolors Palette ── */
 :root {
-  --fern:       #4a7c59;
-  --fern-dark:  #2d5c3e;
-  --fern-light: #7aaa8a;
-  --marigold:   #f9a620;
-  --marigold-lt:#fdc965;
-  --terra:      #b7472a;
-  --cream:      #f5f3ed;
-  --cream-dark: #ede9e0;
-  --bark:       #2e2416;
-  --stone:      #6b6356;
+  --blue:       #0081a7;   /* Cerulean */
+  --blue-dark:  #00607c;   /* Cerulean, darkened for hover states */
+  --teal:       #00afb9;   /* Tropical Teal */
+  --coral:      #f07167;   /* Vibrant Coral */
+  --yellow:     #fdfcdc;   /* Light Yellow */
+  --apricot:    #fed9b7;   /* Soft Apricot */
+  --bark:       #12303b;   /* deep blue-teal for text + footer */
+  --stone:      #587079;   /* muted body text */
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'Jost', system-ui, sans-serif;
@@ -23,7 +21,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-sans);
-  background: var(--cream);
+  background: var(--yellow);
   color: var(--bark);
   font-size: 16px;
   line-height: 1.7;
@@ -66,4 +64,10 @@ img { display: block; max-width: 100%; }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ── Tab pages ── */
+.page {
+  min-height: 70vh;
+  animation: fadeIn 0.5s var(--ease-out) both;
 }

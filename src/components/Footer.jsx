@@ -14,7 +14,7 @@ export default function Footer() {
 
         <nav className="footer__nav">
           {['About', 'Services', 'Philosophy', 'Contact'].map(l => (
-            <a key={l} href={`#${l.toLowerCase()}`} className="footer__link">{l}</a>
+            <a key={l} href={`#/${l.toLowerCase()}`} className="footer__link">{l}</a>
           ))}
         </nav>
 

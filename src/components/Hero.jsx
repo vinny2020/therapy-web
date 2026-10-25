@@ -23,8 +23,8 @@ export default function Hero() {
             life's transitions, grief, anxiety, and the quiet work of becoming.
           </p>
           <div className="hero__actions">
-            <a href="#contact" className="btn btn--primary">Schedule a Consultation</a>
-            <a href="#about" className="btn btn--ghost">Meet Branka</a>
+            <a href="#/contact" className="btn btn--primary">Schedule a Consultation</a>
+            <a href="#/about" className="btn btn--ghost">Meet Branka</a>
           </div>
         </div>
 

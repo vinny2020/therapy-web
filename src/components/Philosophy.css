@@ -2,22 +2,22 @@
   background: white;
 }
 .philosophy__top {
-  background: var(--fern);
+  background: var(--blue);
   padding: 6rem 0 4rem;
   text-align: center;
 }
 .philosophy__eyebrow {
   font-size: 0.72rem; font-weight: 500;
   letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--marigold-lt); margin-bottom: 0.8rem;
+  color: var(--apricot); margin-bottom: 0.8rem;
 }
 .philosophy__heading {
   font-size: clamp(2rem, 3.5vw, 3rem);
-  color: var(--cream); margin-bottom: 1rem;
+  color: var(--yellow); margin-bottom: 1rem;
 }
-.philosophy__heading em { font-style: italic; color: var(--marigold-lt); }
+.philosophy__heading em { font-style: italic; color: var(--apricot); }
 .philosophy__intro {
-  font-size: 1rem; color: rgba(245,243,237,0.75);
+  font-size: 1rem; color: rgba(253,252,220,0.92);
   max-width: 520px; margin: 0 auto; line-height: 1.8;
 }
 
@@ -27,24 +27,24 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
   margin-top: 0;
-  border-bottom: 1px solid var(--cream-dark);
+  border-bottom: 1px solid var(--apricot);
 }
 .pillar {
   padding: 3rem 2rem;
-  border-right: 1px solid var(--cream-dark);
+  border-right: 1px solid var(--apricot);
 }
 .pillar:last-child { border-right: none; }
 .pillar__num {
   display: block;
   font-family: var(--font-serif);
   font-size: 2.2rem;
-  color: var(--cream-dark);
+  color: var(--apricot);
   line-height: 1;
   margin-bottom: 1rem;
 }
 .pillar__divider {
   width: 32px; height: 2px;
-  background: var(--marigold);
+  background: var(--coral);
   margin-bottom: 1rem;
 }
 .pillar__title {
@@ -75,7 +75,7 @@
   position: absolute;
   top: 22px; left: 10%; right: 10%;
   height: 1px;
-  background: var(--cream-dark);
+  background: var(--apricot);
   z-index: 0;
 }
 .process-step {
@@ -87,8 +87,8 @@
 .process-step__num {
   width: 44px; height: 44px;
   border-radius: 50%;
-  background: var(--fern);
-  color: var(--cream);
+  background: var(--blue);
+  color: var(--yellow);
   font-family: var(--font-serif);
   font-size: 1.1rem;
   display: flex; align-items: center; justify-content: center;
@@ -109,7 +109,7 @@
 @media (max-width: 900px) {
   .philosophy__pillars { grid-template-columns: repeat(2, 1fr); }
   .pillar:nth-child(2) { border-right: none; }
-  .pillar { border-bottom: 1px solid var(--cream-dark); }
+  .pillar { border-bottom: 1px solid var(--apricot); }
   .philosophy__steps { grid-template-columns: repeat(2, 1fr); }
   .philosophy__steps::before { display: none; }
 }

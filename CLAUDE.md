@@ -6,8 +6,8 @@ Website for **Branka Gajic, LCSW** — a private therapy practice based in Atlan
 
 - **React 18** + **Vite 5** — component-based SPA
 - **CSS Modules** (per-component `.css` files, no framework)
-- **Botanical Garden** theme from the theme-factory skill
-  - Fern Green `#4a7c59` · Marigold `#f9a620` · Terracotta `#b7472a` · Cream `#f5f3ed`
+- Custom **Coolors** palette
+  - Cerulean `#0081a7` · Tropical Teal `#00afb9` · Light Yellow `#fdfcdc` · Soft Apricot `#fed9b7` · Vibrant Coral `#f07167`
 - Fonts: **Cormorant Garamond** (headings) + **Jost** (body) via Google Fonts
 
 ## Project Structure
@@ -25,7 +25,8 @@ branka/
 │   │   ├── Philosophy.jsx / Philosophy.css  # Approach + process steps
 │   │   ├── Contact.jsx / Contact.css    # Contact form + details
 │   │   └── Footer.jsx / Footer.css
-│   ├── App.jsx                      # Root — scroll reveal observer
+│   ├── App.jsx                      # Root — renders the active tab page + scroll reveal
+│   ├── usePage.js                   # Hash-based tab router (#/about, #/services, ...)
 │   ├── main.jsx
 │   └── index.css                    # CSS variables + global styles
 ├── index.html

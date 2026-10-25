@@ -1,6 +1,6 @@
 .services {
   padding: 7rem 0;
-  background: var(--cream);
+  background: var(--yellow);
 }
 .services__header {
   text-align: center;
@@ -10,13 +10,13 @@
 .services__eyebrow {
   font-size: 0.72rem; font-weight: 500;
   letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--fern); margin-bottom: 0.8rem;
+  color: var(--blue); margin-bottom: 0.8rem;
 }
 .services__heading {
   font-size: clamp(2rem, 3.5vw, 3rem);
   color: var(--bark); margin-bottom: 1rem;
 }
-.services__heading em { font-style: italic; color: var(--fern); }
+.services__heading em { font-style: italic; color: var(--blue); }
 .services__intro {
   font-size: 1rem; color: var(--stone); line-height: 1.8;
 }
@@ -30,7 +30,7 @@
 
 .service-card {
   background: white;
-  border: 1px solid var(--cream-dark);
+  border: 1px solid var(--apricot);
   border-radius: 4px;
   padding: 2rem 1.8rem;
   transition: box-shadow 0.3s, transform 0.3s;
@@ -41,12 +41,12 @@
   content: '';
   position: absolute; bottom: 0; left: 0; right: 0;
   height: 3px;
-  background: var(--fern);
+  background: var(--blue);
   transform: scaleX(0); transform-origin: left;
   transition: transform 0.4s var(--ease-out);
 }
 .service-card:hover {
-  box-shadow: 0 8px 32px rgba(74,124,89,0.10);
+  box-shadow: 0 8px 32px rgba(0,129,167,0.10);
   transform: translateY(-3px);
 }
 .service-card:hover::before { transform: scaleX(1); }
@@ -54,7 +54,7 @@
 .service-card__icon {
   display: block;
   font-size: 1.6rem;
-  color: var(--fern-light);
+  color: var(--teal);
   margin-bottom: 1rem;
 }
 .service-card__title {

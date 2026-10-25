@@ -12,19 +12,19 @@
   display: block;
   font-family: var(--font-serif);
   font-size: 1.4rem;
-  color: var(--cream);
+  color: var(--yellow);
   margin-bottom: 0.2rem;
 }
 .footer__cred {
   display: block;
   font-size: 0.68rem; font-weight: 500;
   letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--fern-light);
+  color: var(--teal);
   margin-bottom: 1rem;
 }
 .footer__tagline {
   font-size: 0.88rem;
-  color: rgba(245,243,237,0.45);
+  color: rgba(253,252,220,0.45);
   line-height: 1.7;
   max-width: 260px;
 }
@@ -35,17 +35,17 @@
 }
 .footer__link {
   font-size: 0.85rem;
-  color: rgba(245,243,237,0.6);
+  color: rgba(253,252,220,0.6);
   transition: color 0.2s;
 }
-.footer__link:hover { color: var(--cream); }
+.footer__link:hover { color: var(--yellow); }
 .footer__loc {
   font-size: 0.85rem;
-  color: rgba(245,243,237,0.35);
+  color: rgba(253,252,220,0.35);
 }
 
 .footer__bottom {
-  border-top: 1px solid rgba(245,243,237,0.08);
+  border-top: 1px solid rgba(253,252,220,0.08);
   padding: 1.4rem 0;
 }
 .footer__bottom-inner {
@@ -58,11 +58,11 @@
 }
 .footer__legal {
   font-size: 0.75rem;
-  color: rgba(245,243,237,0.3);
+  color: rgba(253,252,220,0.3);
 }
 .footer__disclaimer {
   font-size: 0.7rem;
-  color: rgba(245,243,237,0.22);
+  color: rgba(253,252,220,0.22);
   max-width: 500px;
   text-align: right;
   line-height: 1.5;
