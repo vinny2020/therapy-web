@@ -22,7 +22,6 @@ export default function Nav({ page }) {
       <div className="nav__inner container">
         <a href="#/" className="nav__logo" onClick={() => setOpen(false)}>
           <span className="nav__logo-name">Integration Practice Psychotherapy</span>
-          <span className="nav__logo-cred">LCSW</span>
         </a>
 
         <nav className={`nav__links${open ? ' nav__links--open' : ''}`}>

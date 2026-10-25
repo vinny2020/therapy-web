@@ -12,27 +12,24 @@
   display: flex; align-items: center; justify-content: space-between;
 }
 .nav__logo { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+/* Practice name is the site's main header text */
 .nav__logo-name {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
-  line-height: 1.15;
-  letter-spacing: 0.01em;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
   color: var(--bark);
 }
+@media (max-width: 1100px) {
+  .nav__logo-name { font-size: 1.4rem; }
+}
 @media (max-width: 1000px) {
-  .nav__logo-name { font-size: 1.02rem; }
+  .nav__logo-name { font-size: 1.4rem; }
 }
 @media (max-width: 480px) {
-  .nav__logo { max-width: 240px; }
-  .nav__logo-name { font-size: 0.98rem; }
-}
-.nav__logo-cred {
-  font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  color: var(--blue);
-  text-transform: uppercase;
+  .nav__logo { max-width: 270px; }
+  .nav__logo-name { font-size: 1.3rem; }
 }
 .nav__links {
   display: flex; align-items: center; gap: 2.2rem;
@@ -92,7 +89,7 @@
 /* ── Tablet: keep the longer practice name + links from crowding ── */
 .nav__cta { white-space: nowrap; }
 @media (min-width: 721px) and (max-width: 1000px) {
-  .nav__logo { max-width: 210px; }
+  .nav__logo { max-width: 230px; }
   .nav__links { gap: 1.2rem; }
   .nav__link { font-size: 0.72rem; letter-spacing: 0.08em; }
   .nav__cta { font-size: 0.7rem; letter-spacing: 0.08em; padding: 0.5rem 0.9rem; }
