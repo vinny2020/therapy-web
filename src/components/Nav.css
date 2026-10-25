@@ -15,14 +15,14 @@
 /* Practice name is the site's main header text */
 .nav__logo-name {
   font-family: var(--font-serif);
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.005em;
   color: var(--bark);
 }
 @media (max-width: 1100px) {
-  .nav__logo-name { font-size: 1.4rem; }
+  .nav__logo-name { font-size: 1.3rem; }
 }
 @media (max-width: 1000px) {
   .nav__logo-name { font-size: 1.4rem; }

@@ -21,7 +21,7 @@ export default function Nav({ page }) {
     <header className={`nav${solid ? ' nav--scrolled' : ''}`}>
       <div className="nav__inner container">
         <a href="#/" className="nav__logo" onClick={() => setOpen(false)}>
-          <span className="nav__logo-name">Integration Practice Psychotherapy</span>
+          <span className="nav__logo-name">Integration Practice Psychotherapy LLC</span>
         </a>
 
         <nav className={`nav__links${open ? ' nav__links--open' : ''}`}>
