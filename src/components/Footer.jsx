@@ -19,7 +19,7 @@ export default function Footer() {
         </nav>
 
         <div className="footer__contact">
-          <a href="tel:+14705676082" className="footer__link">(470) 567-6082</a>
+          <a href="tel:+12767778178" className="footer__link">(276) 777-8178</a>
           <a href="mailto:gajic.branka1@gmail.com" className="footer__link">gajic.branka1@gmail.com</a>
           <span className="footer__loc">Atlanta, GA · In Person & Telehealth</span>
         </div>

@@ -30,7 +30,7 @@ export default function Contact() {
           <div className="contact__details">
             <div className="contact__detail">
               <span className="contact__detail-label">Phone</span>
-              <a href="tel:+14705676082" className="contact__detail-value">(470) 567-6082</a>
+              <a href="tel:+12767778178" className="contact__detail-value">(276) 777-8178</a>
             </div>
             <div className="contact__detail">
               <span className="contact__detail-label">Email</span>

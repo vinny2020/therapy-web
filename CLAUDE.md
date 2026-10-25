@@ -64,7 +64,7 @@ Your Mac's local IP: run `ipconfig getifaddr en0` to find it.
 - **Branka Gajic** is a Licensed Clinical Social Worker (LCSW) licensed in Georgia
 - Former Staff Clinician at Emory University's Center for Counseling and Wellbeing
 - Offers sessions **in person** (Atlanta, GA) and via **telehealth**
-- Contact: (470) 567-6082
+- Contact: (276) 777-8178
 
 ## Deployment
 
