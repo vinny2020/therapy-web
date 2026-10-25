@@ -34,7 +34,7 @@ export default function Contact() {
             </div>
             <div className="contact__detail">
               <span className="contact__detail-label">Email</span>
-              <a href="mailto:branka.gajic@emory.edu" className="contact__detail-value">branka.gajic@emory.edu</a>
+              <a href="mailto:gajic.branka1@gmail.com" className="contact__detail-value">gajic.branka1@gmail.com</a>
             </div>
             <div className="contact__detail">
               <span className="contact__detail-label">Location</span>

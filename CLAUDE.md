@@ -79,6 +79,6 @@ npm run build
 
 - [x] Portrait added (`public/branka-portrait.jpg`) - replace with a final professional photo when available
 - [ ] Connect contact form to backend (e.g. [Formspree](https://formspree.io) or EmailJS)
-- [ ] Update contact email once private practice address is confirmed
+- [x] Contact email set to gajic.branka1@gmail.com (swap for a practice-domain address later if desired)
 - [ ] Add SEO meta tags / Open Graph image
 - [ ] Set up custom domain
