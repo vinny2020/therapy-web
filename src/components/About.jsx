@@ -9,7 +9,7 @@ export default function About() {
           <div className="about__portrait-frame">
             <img
               className="about__portrait-img"
-              src="/branka.jpg"
+              src="/branka-portrait.jpg"
               alt="Branka Gajic, LCSW"
               width="800"
               height="800"

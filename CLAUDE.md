@@ -16,7 +16,7 @@ Website for **Branka Gajic, LCSW** — a private therapy practice based in Atlan
 branka/
 ├── public/
 │   ├── favicon.svg
-│   └── branka.jpg                   # Portrait shown in About (swap file to change photo)
+│   └── branka-portrait.jpg                   # Portrait shown in About (swap file to change photo)
 ├── src/
 │   ├── components/
 │   │   ├── Nav.jsx / Nav.css        # Fixed nav, mobile hamburger
@@ -77,7 +77,7 @@ npm run build
 
 ## To-Do / Next Steps
 
-- [x] Portrait added (`public/branka.jpg`) - replace with a final professional photo when available
+- [x] Portrait added (`public/branka-portrait.jpg`) - replace with a final professional photo when available
 - [ ] Connect contact form to backend (e.g. [Formspree](https://formspree.io) or EmailJS)
 - [ ] Update contact email once private practice address is confirmed
 - [ ] Add SEO meta tags / Open Graph image
