@@ -16,19 +16,15 @@
   max-width: 320px;
   margin-bottom: 2rem;
 }
-.about__portrait-placeholder {
+.about__portrait-img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: 50% 30%;
   background: var(--apricot);
   border-radius: 4px 4px 60px 4px;
-  display: flex; align-items: center; justify-content: center;
-  overflow: hidden;
-}
-.about__portrait-placeholder span {
-  font-family: var(--font-serif);
-  font-size: 4rem;
-  color: var(--teal);
-  opacity: 0.5;
+  box-shadow: 0 12px 36px rgba(18, 48, 59, 0.14);
 }
 .about__portrait-accent {
   position: absolute;

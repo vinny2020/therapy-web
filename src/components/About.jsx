@@ -7,9 +7,15 @@ export default function About() {
 
         <div className="about__portrait reveal">
           <div className="about__portrait-frame">
-            <div className="about__portrait-placeholder">
-              <span>BG</span>
-            </div>
+            <img
+              className="about__portrait-img"
+              src="/branka.jpg"
+              alt="Branka Gajic, LCSW"
+              width="800"
+              height="800"
+              loading="eager"
+              decoding="async"
+            />
             <div className="about__portrait-accent" />
           </div>
           <div className="about__credentials">
