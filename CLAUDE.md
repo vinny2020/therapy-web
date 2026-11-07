@@ -6,8 +6,7 @@ Website for **Branka Gajic, LCSW** — a private therapy practice based in Atlan
 
 - **React 18** + **Vite 5** — component-based SPA
 - **CSS Modules** (per-component `.css` files, no framework)
-- Custom **Coolors** palette
-  - Cerulean `#0081a7` · Tropical Teal `#00afb9` · Light Yellow `#fdfcdc` · Soft Apricot `#fed9b7` · Vibrant Coral `#f07167`
+- Warm palette (redesign, East Atlanta Counseling-inspired): Cream `#f7f2ee` · Deep Teal `#20474c` · Sand `#d3ab88` · Sand Light `#e3cab5` · Accent `#9a6a43` (accessible sand for buttons/small text). Previous Coolors blue palette is on `main`.
 - Fonts: **Alice** (headings) + **Jost** (body) via Google Fonts
 
 ## Project Structure
@@ -21,8 +20,8 @@ branka/
 ├── src/
 │   ├── components/
 │   │   ├── Nav.jsx / Nav.css        # Fixed nav, mobile hamburger
-│   │   ├── Hero.jsx / Hero.css      # Full-height landing section
-│   │   ├── About.jsx / About.css    # Bio, credentials, quote
+│   │   ├── Hero.jsx / Hero.css      # Home hero (gradient or optional public/hero.jpg)
+│   │   ├── About.jsx / About.css    # Bio + credentials
 │   │   ├── Services.jsx / Services.css  # 6-card services grid
 │   │   ├── Philosophy.jsx / Philosophy.css  # Approach + process steps
 │   │   ├── Contact.jsx / Contact.css    # Contact form + details
