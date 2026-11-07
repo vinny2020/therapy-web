@@ -5,7 +5,7 @@
   text-align: center;
   color: var(--white);
   background:
-    linear-gradient(rgba(32, 40, 42, 0.28), rgba(32, 40, 42, 0.42)),
+    linear-gradient(rgba(20, 34, 37, 0.5), rgba(20, 34, 37, 0.6)),
     url('/hero.jpg') center / cover no-repeat,
     radial-gradient(60% 70% at 18% 25%, #e9b98f 0, transparent 65%),
     radial-gradient(55% 70% at 88% 30%, #c27c78 0, transparent 65%),

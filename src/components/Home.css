@@ -5,7 +5,7 @@
   gap: 5rem; align-items: start;
 }
 .intro__figure img {
-  width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%;
+  width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%;
   background: var(--sand-light);
 }
 .intro__figure figcaption { margin-top: 0.8rem; font-size: 0.8rem; letter-spacing: 0.04em; }
@@ -31,6 +31,24 @@
 .quote__cite {
   font-size: 0.75rem; font-weight: 600;
   letter-spacing: 0.3em; text-transform: uppercase;
+}
+
+/* ── The space ── */
+.space { padding: 2rem 0 6rem; }
+.space__inner {
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem; align-items: center;
+}
+.space__heading {
+  font-size: clamp(2.4rem, 4.6vw, 3.6rem);
+  color: var(--accent-head);
+  margin-bottom: 2rem;
+}
+.space__text p { margin-bottom: 1.2rem; max-width: 480px; }
+.space__text .btn { margin-top: 1rem; }
+.space__figure img {
+  width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 45%;
+  background: var(--sand-light);
 }
 
 /* ── Areas of focus ── */
@@ -80,6 +98,11 @@
   .intro__figure { max-width: 420px; margin: 0 auto; }
   .intro__text { text-align: center; }
   .quote { padding: 2rem 0 4rem; }
+  .space { padding: 0 0 4rem; }
+  .space__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .space__text { text-align: center; }
+  .space__text p { margin-left: auto; margin-right: auto; }
+  .space__figure { max-width: 420px; margin: 0 auto; }
   .focus { padding: 4rem 0; }
   .focus-row, .focus-row--flip { grid-template-columns: 1fr; }
   .focus-row--flip .focus-row__tile { order: 0; }

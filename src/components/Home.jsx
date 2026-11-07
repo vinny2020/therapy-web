@@ -68,6 +68,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── The space ── */}
+      <section className="space">
+        <div className="container space__inner">
+          <div className="space__text">
+            <h2 className="space__heading reveal">The Space</h2>
+            <p className="reveal">
+              Whether we meet in person in Atlanta or online through secure telehealth,
+              the goal is the same: a calm, unhurried room where you can slow down and
+              be heard.
+            </p>
+            <p className="reveal">
+              Soft light, green things growing, and nothing to perform — just space to
+              be as you are.
+            </p>
+            <a href="#/contact" className="btn btn--primary reveal">Begin today</a>
+          </div>
+          <figure className="space__figure reveal">
+            <img src="/space-plant.jpg" alt="A monstera plant in a white pot beside a sunlit window"
+                 width="900" height="1350" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </section>
+
       {/* ── Areas of focus ── */}
       <section className="focus pastel">
         <div className="container">
