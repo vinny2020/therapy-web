@@ -4,15 +4,10 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer__inner">
-        <div className="footer__brand">
-          <span className="footer__name">Branka Gajic</span>
-          <span className="footer__cred">LCSW · Licensed Clinical Social Worker</span>
-          <p className="footer__tagline">
-            A space for healing, growth, and returning to yourself.
-          </p>
-        </div>
+        <a href="#/" className="footer__name">Integration Practice Psychotherapy LLC</a>
+        <p className="footer__cred">Branka Gajic, LCSW · Licensed Clinical Social Worker</p>
 
-        <nav className="footer__nav">
+        <nav className="footer__nav" aria-label="Footer">
           {['About', 'Services', 'Philosophy', 'Contact'].map(l => (
             <a key={l} href={`#/${l.toLowerCase()}`} className="footer__link">{l}</a>
           ))}
@@ -26,7 +21,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <div className="container footer__bottom-inner">
+        <div className="container">
           <p className="footer__legal">
             © {new Date().getFullYear()} Branka Gajic, LCSW. All rights reserved.
           </p>

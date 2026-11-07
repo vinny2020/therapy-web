@@ -8,7 +8,7 @@ Website for **Branka Gajic, LCSW** — a private therapy practice based in Atlan
 - **CSS Modules** (per-component `.css` files, no framework)
 - Custom **Coolors** palette
   - Cerulean `#0081a7` · Tropical Teal `#00afb9` · Light Yellow `#fdfcdc` · Soft Apricot `#fed9b7` · Vibrant Coral `#f07167`
-- Fonts: **Cormorant Garamond** (headings) + **Jost** (body) via Google Fonts
+- Fonts: **Alice** (headings) + **Jost** (body) via Google Fonts
 
 ## Project Structure
 
@@ -16,6 +16,7 @@ Website for **Branka Gajic, LCSW** — a private therapy practice based in Atlan
 branka/
 ├── public/
 │   ├── favicon.svg
+│   ├── hero.jpg                              # OPTIONAL warm office photo behind the home hero (gradient shown if absent)
 │   └── branka-portrait.jpg                   # Portrait shown in About (swap file to change photo)
 ├── src/
 │   ├── components/

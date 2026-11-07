@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import usePage from './usePage'
 import Nav from './components/Nav'
-import Hero from './components/Hero'
+import Home from './components/Home'
 import About from './components/About'
 import Services from './components/Services'
 import Philosophy from './components/Philosophy'
@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 const VIEWS = {
-  home: Hero,
+  home: Home,
   about: About,
   services: Services,
   philosophy: Philosophy,

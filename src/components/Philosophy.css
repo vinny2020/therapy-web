@@ -1,120 +1,44 @@
-.philosophy {
-  background: white;
-}
-.philosophy__top {
-  background: var(--blue);
-  padding: 6rem 0 4rem;
-  text-align: center;
-}
+.philosophy { background: var(--cream); }
+.philosophy__top { padding: 6rem 0 3rem; text-align: center; }
+.philosophy__top .container { max-width: 720px; }
 .philosophy__eyebrow {
-  font-size: 0.72rem; font-weight: 500;
-  letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--apricot); margin-bottom: 0.8rem;
-}
-.philosophy__heading {
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  color: var(--yellow); margin-bottom: 1rem;
-}
-.philosophy__heading em { font-style: italic; color: var(--apricot); }
-.philosophy__intro {
-  font-size: 1rem; color: rgba(253,252,220,0.92);
-  max-width: 520px; margin: 0 auto; line-height: 1.8;
-}
-
-/* ── Pillars ── */
-.philosophy__pillars {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  margin-top: 0;
-  border-bottom: 1px solid var(--apricot);
-}
-.pillar {
-  padding: 3rem 2rem;
-  border-right: 1px solid var(--apricot);
-}
-.pillar:last-child { border-right: none; }
-.pillar__num {
-  display: block;
   font-family: var(--font-serif);
-  font-size: 2.2rem;
-  color: var(--apricot);
-  line-height: 1;
-  margin-bottom: 1rem;
+  font-size: 1.15rem; letter-spacing: 0.14em; color: var(--accent);
+  margin-bottom: 0.6rem;
 }
-.pillar__divider {
-  width: 32px; height: 2px;
-  background: var(--coral);
-  margin-bottom: 1rem;
-}
-.pillar__title {
-  font-family: var(--font-serif);
-  font-size: 1.3rem; font-weight: 400;
-  color: var(--bark); margin-bottom: 0.7rem;
-}
-.pillar__body { font-size: 0.88rem; color: var(--stone); line-height: 1.75; }
+.philosophy__heading { font-size: clamp(2.3rem, 4.4vw, 3.4rem); margin-bottom: 1.2rem; }
+.philosophy__heading em { font-style: normal; color: var(--accent-head); }
 
-/* ── Process steps ── */
-.philosophy__process {
-  padding: 5rem 0 7rem;
+.philosophy .philosophy__pillars {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem;
+  padding-bottom: 5rem;
 }
+.pillar { background: var(--white); padding: 2.4rem 2.2rem; border-top: 3px solid var(--sand); }
+.pillar__num { font-family: var(--font-serif); font-size: 1rem; color: var(--accent); letter-spacing: 0.2em; }
+.pillar__divider { display: none; }
+.pillar__title { font-size: 1.6rem; color: var(--accent); margin: 0.3rem 0 0.7rem; }
+.pillar__body { font-size: 0.98rem; }
+
+.philosophy .philosophy__process { padding: 5rem 2rem 6rem; max-width: none; background: #efe4da; }
+.philosophy__process > * { max-width: 1116px; margin-left: auto; margin-right: auto; }
 .philosophy__process-heading {
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  color: var(--bark);
-  margin-bottom: 2.5rem;
-  text-align: center;
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  text-align: center; margin-bottom: 2.6rem;
 }
-.philosophy__steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  position: relative;
-}
-.philosophy__steps::before {
-  content: '';
-  position: absolute;
-  top: 22px; left: 10%; right: 10%;
-  height: 1px;
-  background: var(--apricot);
-  z-index: 0;
-}
-.process-step {
-  display: flex; flex-direction: column;
-  align-items: center; text-align: center;
-  gap: 1rem;
-  position: relative; z-index: 1;
-}
+.philosophy__steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem 2.4rem; }
+.process-step { display: flex; gap: 1.2rem; align-items: flex-start; }
 .process-step__num {
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  background: var(--blue);
-  color: var(--yellow);
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
+  flex: none; width: 2.6rem; height: 2.6rem; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
+  background: var(--teal-deep); color: var(--cream);
+  font-family: var(--font-serif); font-size: 1.1rem;
 }
-.process-step__title {
-  font-family: var(--font-serif);
-  font-size: 1.05rem;
-  color: var(--bark);
-  margin-bottom: 0.3rem;
-}
-.process-step__desc {
-  font-size: 0.85rem;
-  color: var(--stone);
-  line-height: 1.7;
-}
+.process-step__title { font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 0.2rem; }
+.process-step__desc { font-size: 0.98rem; }
 
-@media (max-width: 900px) {
-  .philosophy__pillars { grid-template-columns: repeat(2, 1fr); }
-  .pillar:nth-child(2) { border-right: none; }
-  .pillar { border-bottom: 1px solid var(--apricot); }
-  .philosophy__steps { grid-template-columns: repeat(2, 1fr); }
-  .philosophy__steps::before { display: none; }
-}
-@media (max-width: 580px) {
-  .philosophy__pillars { grid-template-columns: 1fr; }
-  .pillar { border-right: none; }
-  .philosophy__steps { grid-template-columns: 1fr; }
+@media (max-width: 760px) {
+  .philosophy__top { padding: 3.5rem 0 2rem; }
+  .philosophy .philosophy__pillars, .philosophy .philosophy__steps { grid-template-columns: 1fr; }
+  .philosophy .philosophy__pillars { padding-bottom: 3rem; }
+  .philosophy .philosophy__process { padding: 3rem 1.4rem 4rem; }
 }
